@@ -1,0 +1,14 @@
+# Claude Code local settings
+.claude/
+.mcp.json
+
+# Playwright MCP browser cache
+.playwright-mcp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
