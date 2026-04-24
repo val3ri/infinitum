@@ -1,139 +1,77 @@
 # Infinitum Website
 
-A modern, single-page website featuring full-viewport sections and scroll-triggered animations.
+A modern, single-page marketing website built with vanilla HTML, CSS, and JavaScript.
 
-## 🚀 Features
+## Features
 
-- **Rocket Launch Animation**: Logo animates with parallax effect as you scroll
-- **Full-Viewport Sections**: Each section takes up the entire screen
-- **Responsive Navigation**: Appears on scroll, mobile-friendly hamburger menu
-- **Smooth Scrolling**: Seamless navigation between sections
-- **Accessibility**: Respects `prefers-reduced-motion` setting
-- **Mobile Responsive**: Optimized for all screen sizes
+- **Scroll-triggered navbar**: Appears after scrolling 50% through the hero section, with the logo
+- **Full-viewport sections**: Each section takes up the entire screen
+- **Responsive navigation**: Mobile-friendly hamburger menu
+- **Smooth scrolling**: Seamless navigation between sections
+- **Fade-in animations**: Sections animate into view via Intersection Observer
+- **Accessibility**: Respects `prefers-reduced-motion`
+- **Mobile responsive**: Breakpoint at 768px
 
-## 📁 File Structure
+## File Structure
 
 ```
 infinitum-website/
-├── index.html          # Main HTML structure
-├── styles.css          # All styling and layout
-├── script.js           # Animations and interactions
-├── logo.JPG            # Infinitum logo (rocket + infinity symbol)
-├── content.md          # Content planning document
-├── layout.md           # Layout specifications
-└── README.md           # This file
+├── index.html      # All markup
+├── styles.css      # All styling
+├── script.js       # All interactivity
+├── logo.JPG        # Infinitum logo (rocket + infinity symbol)
+└── README.md
 ```
 
-## 🎨 Sections
+## Sections
 
-1. **Main (Hero)** - Rocket logo with headline and subheadline
-2. **Who We Are** - Split layout with text and abstract visual
-3. **What We Do** - Background overlay with services list
-4. **Contact** - Contact form and information
-5. **Footer** - Copyright and links
+1. **Main (Hero)** — Logo, headline, subheadline
+2. **Who We Are** — Split layout with text and image placeholder
+3. **What We Do** — Services with background overlay
+4. **Contact** — Contact form
+5. **Footer**
 
-## 🖼️ Images To Replace
-
-Currently using gradient placeholders. Replace with actual stock photos:
-
-### Who We Are Section
-- **File**: `who-we-are.jpg` (or update HTML)
-- **Specs**: Abstract tech visual (nodes, circuits, digital patterns)
-- **Colors**: Blues, purples, teals
-- **Size**: Min 1200x800px
-- **Update in**: `index.html` line 59
-
-### What We Do Background
-- **File**: `what-we-do-bg.jpg`
-- **Specs**: Precision tech imagery (circuit boards, code, tech details)
-- **Size**: Min 1920x1080px
-- **Update in**: `styles.css` line 285 (uncomment background-image)
-
-### Stock Photo Resources
-- **Unsplash**: https://unsplash.com
-- **Pexels**: https://pexels.com
-- **Pixabay**: https://pixabay.com
-
-## 🚀 How to View
-
-Simply open `index.html` in a web browser:
+## How to Run
 
 ```bash
-# Option 1: Double-click index.html
-
-# Option 2: Use a local server (recommended for testing)
-# Python 3
 python3 -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-
-# Then visit: http://localhost:8000
+# Then open http://localhost:8000
 ```
 
-## ⚙️ Customization
+## Customization
 
-### Update Colors
+### Colors
 Edit CSS variables in `styles.css`:
 ```css
 :root {
     --primary-blue: #4169E1;
     --primary-purple: #9B59B6;
-    /* ... more colors */
+    --primary-pink: #E91E63;
+    --primary-yellow: #FFD700;
 }
 ```
 
-### Update Content
-All text content is in `index.html`. Search for section IDs:
-- `#main` - Hero section
-- `#who-we-are` - About section
-- `#what-we-do` - Services section
-- `#contact` - Contact section
-
-### Adjust Animation
-Modify settings in `script.js`:
+### Navbar trigger point
 ```javascript
 const CONFIG = {
-    navTriggerPoint: 0.7,  // When nav appears (0-1)
-    // ... more settings
-}
+    navTriggerPoint: 0.5  // 0–1, fraction of hero height
+};
 ```
 
-## 📱 Responsive Breakpoints
+## Pending (Phase 1)
 
-- **Desktop**: > 768px
-- **Tablet/Mobile**: ≤ 768px
+- Replace placeholder images (`who-we-are.jpg` 1200×800px, `what-we-do-bg.jpg` 1920×1080px)
+- Wire up the contact form (Formspree, EmailJS, or custom backend)
+- Add SEO meta tags and Open Graph tags
 
-## 🎯 Next Steps
+## Phase 2
 
-1. **Source Images**: Find and add stock photos for "Who We Are" and "What We Do"
-2. **Test**: Open in different browsers and devices
-3. **Form Integration**: Connect contact form to backend/email service
-4. **SEO**: Add meta tags, Open Graph tags
-5. **Analytics**: Add Google Analytics or similar
-6. **Deploy**: Host on Netlify, Vercel, GitHub Pages, etc.
+- Rocket launch animation: logo flies from hero to navbar on scroll, returns on scroll back up
 
-## 🛠️ Form Submission
+## Browser Support
 
-Currently the form shows an alert. To connect to a backend:
-
-1. **Email Service** (Formspree, EmailJS)
-2. **Backend API** (Node.js, PHP, etc.)
-3. **Serverless** (Netlify Forms, AWS Lambda)
-
-Update the `handleFormSubmit()` function in `script.js`.
-
-## 🌐 Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers
-
-## 📄 License
-
-© 2026 Infinitum. All rights reserved.
+Chrome, Firefox, Safari (latest versions), mobile browsers.
 
 ---
 
-Built with ❤️ using HTML, CSS, and vanilla JavaScript.
+© 2026 Infinitum. All rights reserved.
