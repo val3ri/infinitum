@@ -2,31 +2,31 @@
 
 ## 1. Content
 
-- [ ] Replace placeholder English copy with final English content.
-- [ ] Add Bulgarian copy for all sections.
-- [ ] Use the approved slogan:
+- [x] Replace placeholder English copy with final English content.
+- [x] Add Bulgarian copy for all sections.
+- [x] Use the approved slogan:
   - EN: "Endless possibilities. Practical solutions."
   - BG: "Безкрайни възможности. Практични решения."
-- [ ] Present the company as a consulting partner for business development, IT, technical support, commercial support, and product market introduction.
-- [ ] Keep the messaging broad enough for different types of business clients.
-- [ ] Do not mention EBK or any specific client.
+- [x] Present the company as a consulting partner for business development, IT, technical support, commercial support, and product market introduction.
+- [x] Keep the messaging broad enough for different types of business clients.
+- [x] Do not mention EBK or any specific client.
 
 ## 2. Sections
 
-- [ ] Main / Начало
+- [x] Main / Начало
   - Company name: Infinitum Bulgaria / Инфинитум България.
   - Add slogan and short positioning statement.
   - Use the logo as the main visual element.
-- [ ] Who We Are / Кои сме ние
+- [x] Who We Are / Кои сме ние
   - Explain that the company connects business, technology, and practical execution.
   - Use a human/business consulting tone.
-- [ ] What We Do / Какво правим
+- [x] What We Do / Какво правим
   - Add service areas:
     - Business Development
     - Technical & Commercial Consulting
     - Product Introduction & Market Support
     - On-site & Remote Support
-- [ ] Contact / Контакти
+- [x] Contact / Контакти
   - Remove contact form.
   - Remove phone number.
   - Add only clickable email: info@infinitum-bulgaria.bg.
@@ -34,47 +34,58 @@
 
 ## 3. Images
 
-- [ ] Use one background image per main section.
-- [ ] Recommended current image mapping:
+- [x] Use one background image per main section.
+- [x] Recommended current image mapping:
   - Main: `website-pictures_unsplash/nasa-Q1p7bh3SHj8-unsplash.jpg`
   - Who We Are: `website-pictures_unsplash/dylan-gillis-KdeqA3aTnBY-unsplash.jpg`
   - What We Do: `website-pictures_unsplash/homa-appliances-_XDK4naBbgw-unsplash.jpg` or `website-pictures_unsplash/4_zhenyu-luo-kE0JmtbvXxM-unsplash.jpg`
   - Contact: `website-pictures_unsplash/andrew-neel-cckf4TsHAuw-unsplash.jpg`
-- [ ] Tune `background-position` for each section on desktop and mobile.
-- [ ] Add overlays where needed for text readability.
-- [ ] Keep unused images as reserves.
+- [x] Tune `background-position` for each section on desktop and mobile.
+- [x] Add overlays where needed for text readability.
+- [x] Keep unused images as reserves.
 
 ## 4. Design & UX
 
-- [ ] Keep the site as a polished one-page business card website.
-- [ ] Preserve the existing section anchors:
+- [x] Keep the site as a polished one-page business card website.
+- [x] Preserve the existing section anchors:
   - `#main`
   - `#who-we-are`
   - `#what-we-do`
   - `#contact`
-- [ ] Update navigation labels for bilingual support.
-- [ ] Keep the rocket/logo animation only if it still feels polished after the redesign.
-- [ ] Ensure all animations respect `prefers-reduced-motion`.
-- [ ] Make sure every section works well on mobile.
-- [ ] Avoid stock-looking or overly literal presentation.
+- [x] Update navigation labels for bilingual support.
+- [x] Keep the rocket/logo animation only if it still feels polished after the redesign.
+- [x] Ensure all animations respect `prefers-reduced-motion`.
+- [x] Make sure every section works well on mobile.
+- [x] Avoid stock-looking or overly literal presentation.
 
 ## 5. Bilingual Version
 
-- [ ] Decide implementation approach:
+- [x] Decide implementation approach:
   - Single page with language toggle, or
   - Separate `index.html` and `bg.html`.
-- [ ] English should be the main/default version.
-- [ ] Bulgarian version should be easily accessible from the navigation.
-- [ ] Keep URLs and anchors clean.
+- [x] English should be the main/default version.
+- [x] Bulgarian version should be easily accessible from the navigation.
+- [x] Keep URLs and anchors clean.
 
 ## 6. Technical
 
-- [ ] Add SEO meta tags.
-- [ ] Add Open Graph tags.
-- [ ] Set correct page title and description.
-- [ ] Check image sizes and optimize if needed.
+- [x] Add SEO meta tags.
+- [x] Add Open Graph tags.
+- [x] Set correct page title and description.
+- [x] Add `legal.html` with Legal Notice information.
+- [x] Add `privacy.html` with Privacy Policy information.
+- [x] Link legal and privacy pages from the footer.
+- [x] Include company details:
+  - Legal entity: Инфинитум България ЕООД / Infinitum Bulgaria Ltd.
+  - UIC/VAT: 208021678 / BG208021678
+  - Registered address: БЪЛГАРИЯ, гр. София (1000), р-н Оборище, ул. "Георги Бенковски", 14, ет. 3
+  - Managing director: Валери Пенчев
+  - Email: info@infinitum-bulgaria.bg
+- [x] Mention that the current site does not use analytics, tracking cookies, embedded media, or contact forms.
+- [x] Mention local language preference storage.
+- [x] Check image sizes and optimize if needed.
 - [ ] Test local opening directly from `index.html`.
-- [ ] Optionally test with `python3 -m http.server 8000`.
+- [x] Optionally test with `python3 -m http.server 8000`.
 
 ## 7. Deployment
 

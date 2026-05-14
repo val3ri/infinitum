@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinitum - Launching Ideas Into Reality</title>
+    <title>Infinitum Bulgaria | Endless possibilities. Practical solutions.</title>
+    <meta name="description" content="Infinitum Bulgaria is a consulting partner for business development, technology, product introduction, and practical technical and commercial support.">
+    <meta name="theme-color" content="#12204a">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Infinitum Bulgaria">
+    <meta property="og:description" content="Endless possibilities. Practical solutions.">
+    <meta property="og:image" content="https://infinitum-bulgaria.bg/assets/brand/logo-transparent.png">
+    <meta property="og:url" content="https://infinitum-bulgaria.bg">
+
+    <link rel="canonical" href="https://infinitum-bulgaria.bg/">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar (hidden initially, appears on scroll) -->
-    <nav id="navbar" class="navbar">
+    <nav id="navbar" class="navbar" aria-label="Primary navigation">
         <div class="nav-container">
-            <div class="nav-logo">
-                <img src="logo.JPG" alt="Infinitum Logo">
+            <a class="nav-brand" href="#main" aria-label="Infinitum Bulgaria home">
+                <img src="assets/brand/logo-transparent.png" alt="Infinitum Bulgaria logo">
+                <span>Infinitum Bulgaria</span>
+            </a>
+
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#main" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#who-we-are" data-i18n="nav.who">Who We Are</a></li>
+                    <li><a href="#what-we-do" data-i18n="nav.what">What We Do</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+
+                <div class="language-switcher" aria-label="Language switcher">
+                    <button class="language-btn active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="language-btn" type="button" data-lang="bg" aria-pressed="false">BG</button>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#main">Home</a></li>
-                <li><a href="#who-we-are">Who We Are</a></li>
-                <li><a href="#what-we-do">What We Do</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="hamburger" aria-label="Toggle menu">
+
+            <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -27,111 +48,98 @@
         </div>
     </nav>
 
-    <!-- Main Section (Hero) -->
-    <section id="main" class="section hero-section">
-        <div class="hero-content">
-            <div class="logo-container">
-                <img src="logo.JPG" alt="Infinitum Logo" class="hero-logo">
-            </div>
-            <h1 class="hero-headline">Launching ideas into reality</h1>
-            <p class="hero-subheadline">We transform bold visions into powerful digital solutions that propel your business forward.</p>
-        </div>
-        <div class="scroll-indicator">
-            <span>Explore</span>
-            <div class="arrow-down"></div>
-        </div>
-    </section>
+    <main>
+        <section id="main" class="section hero-section">
+            <div class="section-bg"></div>
+            <div class="section-shade"></div>
 
-    <!-- Who We Are Section -->
-    <section id="who-we-are" class="section who-section">
-        <div class="split-layout">
-            <div class="text-panel">
-                <h2>Who We Are</h2>
-                <p>Innovators. Builders. Problem-solvers. We craft digital experiences that push boundaries and deliver results.</p>
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Endless possibilities. Practical solutions.</h1>
+                <p class="hero-subheadline" data-i18n="hero.subtitle">Consulting for business development, technology, market entry, and practical support where strategy needs real execution.</p>
+                <a class="primary-link" href="#contact" data-i18n="hero.cta">Start a conversation</a>
             </div>
-            <div class="image-panel">
-                <!-- Placeholder: Replace with actual image -->
-                <div class="placeholder-gradient"></div>
+
+            <a class="scroll-indicator" href="#who-we-are" aria-label="Scroll to Who We Are">
+                <span data-i18n="scroll">Explore</span>
+                <span class="arrow-down"></span>
+            </a>
+        </section>
+
+        <section id="who-we-are" class="section who-section">
+            <div class="section-bg"></div>
+            <div class="section-shade"></div>
+
+            <div class="content-panel content-panel-right">
+                <p class="eyebrow" data-i18n="who.eyebrow">Who We Are</p>
+                <h2 data-i18n="who.title">A practical partner between business and technology.</h2>
+                <p data-i18n="who.body">Infinitum Bulgaria supports companies that need clear thinking, hands-on coordination, and reliable guidance across commercial and technical challenges. We help turn complex situations into structured next steps.</p>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="arrow-down"></div>
-        </div>
-    </section>
 
-    <!-- What We Do Section -->
-    <section id="what-we-do" class="section what-section">
-        <div class="background-image"></div>
-        <div class="content-overlay">
-            <div class="text-card">
-                <h2>What We Do</h2>
-                <ul class="services-list">
-                    <li>
-                        <strong>Development</strong> — Robust web applications that scale
-                    </li>
-                    <li>
-                        <strong>Design</strong> — Interfaces that inspire and perform
-                    </li>
-                    <li>
-                        <strong>Automation</strong> — Smart tools that save time
-                    </li>
-                    <li>
-                        <strong>Consulting</strong> — Expert solutions for technical challenges
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="arrow-down"></div>
-        </div>
-    </section>
+            <a class="scroll-indicator light" href="#what-we-do" aria-label="Scroll to What We Do">
+                <span class="arrow-down"></span>
+            </a>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="contact-content">
-            <h2>Ready to Launch?</h2>
-            <p class="contact-subheading">Get in touch and let's propel your next project forward.</p>
+        <section id="what-we-do" class="section what-section">
+            <div class="section-bg"></div>
+            <div class="section-shade"></div>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a>
-                </div>
-                <div class="contact-item">
-                    <strong>Phone:</strong> <a href="tel:+359888123456">+359 888 123 456</a>
+            <div class="content-panel services-panel">
+                <p class="eyebrow" data-i18n="what.eyebrow">What We Do</p>
+                <h2 data-i18n="what.title">Support for growth, products, and operations.</h2>
+
+                <div class="services-grid">
+                    <article class="service-item">
+                        <h3 data-i18n="service.business.title">Business Development</h3>
+                        <p data-i18n="service.business.body">Support for entering new markets, positioning products, and developing commercial opportunities.</p>
+                    </article>
+                    <article class="service-item">
+                        <h3 data-i18n="service.consulting.title">Technical & Commercial Consulting</h3>
+                        <p data-i18n="service.consulting.body">Practical guidance for resolving technical, operational, and business challenges.</p>
+                    </article>
+                    <article class="service-item">
+                        <h3 data-i18n="service.market.title">Product Introduction & Market Support</h3>
+                        <p data-i18n="service.market.body">Assistance with presenting and introducing products to commercial and industrial clients.</p>
+                    </article>
+                    <article class="service-item">
+                        <h3 data-i18n="service.support.title">On-site & Remote Support</h3>
+                        <p data-i18n="service.support.body">Flexible support delivered remotely or on location, depending on the needs of the client and the project.</p>
+                    </article>
                 </div>
             </div>
 
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+            <a class="scroll-indicator light" href="#contact" aria-label="Scroll to Contact">
+                <span class="arrow-down"></span>
+            </a>
+        </section>
 
-    <!-- Footer -->
+        <section id="contact" class="section contact-section">
+            <div class="section-bg"></div>
+            <div class="section-shade"></div>
+
+            <div class="contact-content">
+                <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+                <h2 data-i18n="contact.title">Let’s talk.</h2>
+                <p data-i18n="contact.body">Tell us where your business is headed and what needs to move next.</p>
+                <a class="email-link" href="mailto:info@infinitum-bulgaria.bg">info@infinitum-bulgaria.bg</a>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Infinitum. All rights reserved.</p>
+            <p data-i18n="footer.copy">&copy; 2026 Infinitum Bulgaria. All rights reserved.</p>
             <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+                <a href="legal.html" data-i18n="footer.legal">Legal Notice</a>
+                <a href="#main" data-i18n="footer.back">Back to top</a>
             </div>
         </div>
     </footer>
 
-    <!-- Fallback for no JavaScript -->
     <noscript>
         <style>
-            #navbar { display: flex !important; opacity: 1 !important; }
-            .hero-logo { transform: none !important; }
+            #navbar { opacity: 1 !important; transform: none !important; }
         </style>
     </noscript>
 
